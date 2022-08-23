@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html{
+  /*variáveis*/
+  --bg-color:#000;
+  --text-color:#FFFFFF;
+  --primary-color: #4263EB;
+  --primary-color-dark: #364FC7;
+}
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;  
+}
+
+body.dark-pink {
+  --bg-color: #1F000B;
+  --text-color: #FFFFFF;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D; 
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100%;
+}
+
+img.avatar {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--primary-color) solid 4px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+
+ul li a{
+  height: 53px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: background 400ms;
+}
+
+/*pseudo-class */
+ul li a:hover{
+  background: var(--primary-color-dark);
+}
+
+.inst {
+  background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.lin {
+  background: linear-gradient( 90deg,rgb(86, 123, 246) 0%, rgba(47, 41, 157, 1) 100%);
+}
+
+.git {
+  background: linear-gradient(58deg, #1f9b95 8%, hsl(204, 52%, 46%) 98%);
+}
+
+.what {
+  background: linear-gradient(58deg, #096340 8%, #023622 98%);
+}
+
+.port {
+  background: linear-gradient(70deg, #923dff 13%, #ac76ff 95%);
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer:hover{
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
